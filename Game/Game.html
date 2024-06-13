@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>CodeQuest: Sammle die Münzen</h1>
+        <div id="game-area">
+            <!-- Münzen werden hier dynamisch hinzugefügt -->
+        </div>
+        <p id="score">Gesammelte Münzen: 0</p>
+        <p id="rewards">Belohnungen: 0</p>
+        
+        <div id="editor-container">
+            <h2>Code-Editor</h2>
+            <textarea id="code-editor" rows="10" cols="50">// Schreibe deinen Code hier</textarea>
+            <button onclick="runCode()">Code Ausführen</button>
+        </div>
+        
+        <div id="level-up">
+            <button onclick="nextLevel()">Nächstes Level</button>
+        </div>
+
+        <div id="tutorial">
+            <h2>Tutorial</h2>
+            <p id="tutorial-text">Willkommen bei CodeQuest! Sammle die Münzen, indem du auf sie klickst. Verwende den Code-Editor, um deinen Code auszuführen und die Aufgaben zu lösen.</p>
+        </div>
+    </div>
+    <script src="Game.js"></script>
+</body>
+</html>
